@@ -1,21 +1,22 @@
-function add2Nums(num1, num2) {
-  return num1 + num2;
+// create sample data for e-commerce store
+const userName = "joec1982";
+const firstName = "Joe";
+const lastName = "Cowin";
+
+const product1 = "T-Shirt";
+const product2 = "Socks";
+
+const price1 = 10;
+const price2 = 5;
+const salesTax = 0.07;
+
+// TODO: calculate total price of products
+const totalPrice = calcPriceOf2Items(p1, p2);
+
+// Don't reuse variable !!! Function parameters should NOT be the same as scope
+function calcTotalPriceWithTax(total, taxRate) {
+  return total + total * salesTax;
 }
 
-const sum = add2Nums(1, 2);
-
-console.log(sum);
-
-function sub(num1, num2) {
-  return num1 - num2;
-}
-
-const equal = sub(99, 98);
-console.log(equal);
-
-function multiplyWhatever(num1, num2) {
-  return num1 * num2;
-}
-
-const multiply = multiplyWhatever(4, 8);
-console.log(multiply);
+const totalPriceWithTax = calcTotalPriceWithTax(totalPrice, salesTax);
+console.log(totalPriceWithTax);
