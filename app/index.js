@@ -35,6 +35,19 @@ const product = {
   desc: "Soft Jersey Knit",
 }
 
+// Template literal - looks like creating a catalogue using JS
+function createProductTile(product) {
+  return `
+  <figure>
+    <img src="${product.imgUrl}" alt="${product.name}">
+    <figcaption>
+      <h2>${product.name}</h2>
+      <small>${product.price}</small>
+      <p>${product.description}</p>
+    </figcaption>
+  `;
+}
+
 const cartTotal = 101;
 const discount = 0.1;
 
