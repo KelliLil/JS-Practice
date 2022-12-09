@@ -39,12 +39,13 @@ const product = {
 function createProductTile(prod) {
   return `
   <figure>
-    <img src="${product.imgUrl}" alt="${product.name}">
-    <figcaption>
-      <h2>${product.name}</h2>
-      <small>${product.price}</small>
-      <p>${product.description}</p>
-    </figcaption>
+     <img src="${product.imgUrl}" alt="${product.name}">
+     <figcaption>
+       <h2>${product.name}</h2>
+       <small>${product.price}</small>
+       <p>${product.description}</p>
+     </figcaption>
+  </figure>
   `;
 }
 const productTile = createProductTile(product);
