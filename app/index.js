@@ -36,7 +36,7 @@ const product = {
 }
 
 // Template literal - looks like creating a catalogue using JS
-function createProductTile(product) {
+function createProductTile(prod) {
   return `
   <figure>
     <img src="${product.imgUrl}" alt="${product.name}">
@@ -47,6 +47,8 @@ function createProductTile(product) {
     </figcaption>
   `;
 }
+const productTile = createProductTile(product);
+console.log(productTile);
 
 const cartTotal = 101;
 const discount = 0.1;
