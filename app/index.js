@@ -41,7 +41,5 @@ function createProductTile(prod) {
   </figure>
   `;
 }
-const firstProduct = products[0];
-console.log(createProductTile(firstProduct));
 
 console.log(products[0].discount.code);
