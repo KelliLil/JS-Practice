@@ -42,4 +42,17 @@ function createProductTile(prod) {
   `;
 }
 
+function isDiscounted(prod) {
+  // Undefined is falsy. If there is no discount, the function will be false
+  let result;
+  if (prod.discount) {
+    return true;
+  } else {
+    return false;
+  }
+}
+}
+
+
+console.log(isDiscounted(products[0]));
 console.log(products[0].discount.code);
