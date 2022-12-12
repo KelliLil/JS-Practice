@@ -32,7 +32,7 @@ const products = [
 function createProductTile(prod) {
   return `
   <figure>
-     <img src="${prod.imgUrl}" alt="${product.name}">
+     <img src="${prod.imgUrl}" alt="${prod.name}">
      <figcaption>
        <h2>${prod.name}</h2>
        <small>${prod.price}</small>
@@ -55,4 +55,5 @@ function isDiscounted(prod) {
 
 
 console.log(isDiscounted(products[0]));
+
 console.log(products[0].discount.code);
