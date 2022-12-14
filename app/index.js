@@ -20,6 +20,6 @@ const createBioCard = (person) => `
     </section>
     `;
 
-const bioCardHTML = users.map(createBioCard).join("");
+const bioCardHTML = people.map(createBioCard).join("");
 
 console.log(bioCardHTML);
